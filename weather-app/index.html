@@ -26,7 +26,7 @@
       <div class="box">
         <div class="row">
           <div class="col-9">
-            <form>
+            <form id="search-form">
               <input
                 type="text"
                 placeholder="Type a city"
@@ -44,14 +44,10 @@
           </div>
           <div class="col-3">
             <label class="active-unit" id="celsius-label-btn">
-              <button class="celsius-btn" id="celsius">
-                ºC
-              </button>
+              <button class="celsius-btn" id="celsius">ºC</button>
             </label>
             <label class="alternative-unit" id="fahrenheit-label-btn">
-              <button class="fahrenheit-btn" id="fahrenheit">
-                ºF
-              </button>
+              <button class="fahrenheit-btn" id="fahrenheit">ºF</button>
             </label>
           </div>
         </div>
@@ -86,6 +82,13 @@
         <div class="row hour-forecast" id="forecast"></div>
       </div>
     </div>
+
+    <div class="github-link">
+      <a href="https://github.com/Awaria1337" target="_blank" class="btn btn-dark">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>

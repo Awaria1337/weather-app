@@ -1,144 +1,139 @@
 body {
-    font-family: "Titillium Web", sans-serif;
-    color: #636363;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 40px auto;
-  }
-  
-  .box {
-    border: 0.7px solid #636363;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    background-image: url("media/undraw_weather_app_i5sm.svg");
-    background-size: 150px;
-    background-position: 100px 170px;
-    background-repeat: no-repeat;
-  }
-  
-  .fas {
-    color: #636363;
-  }
-  
-  .search-box,
-  .form-btn,
-  .celsius-btn,
-  .fahrenheit-btn {
-    margin-top: 15px;
-    padding: 6px;
-    border: 0.7px solid #636363;
-  }
-  
-  .search-box,
-  .form-btn {
-    border-radius: 5px;
-  }
-  
-  .search-box {
-    width: 300px;
-    margin-left: 15px;
-  }
-  
-  .form-btn,
-  .celsius-btn,
-  .fahrenheit-btn {
-    background: none;
-    width: 40px;
-  }
-  
-  .form-btn:hover {
-    background: #f2f2f2;
-  }
-  
-  .celsius-btn,
-  .fahrenheit-btn {
-    border-radius: 10px;
-  }
-  
-  .celsius-btn {
-    margin-left: 23px;
-    background: #f7e4df;
-  }
-  
-  h1 {
-    padding: 15px 0 5px 20px;
-    font-size: 34px;
-  }
-  
-  .date-description {
-    padding-left: 37px;
-    font-size: 14px;
-    text-transform: capitalize;
-  }
-  
-  .icon {
-    position: relative;
-    bottom: 25px;
-    left: 85px;
-  }
-  
-  h2 {
-    position: relative;
-    right: 6px;
-  }
-  
-  .current-temp {
-    font-size: 45px;
-  }
-  
-  .weather-unit {
-    position: relative;
-    left: 2px;
-    bottom: 12px;
-  }
-  
-  .weather-extra {
-    font-size: 14px;
-    position: relative;
-    left: 360px;
-    bottom: 25px;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .hour-forecast {
-    text-align: center;
-    margin: 50px 0 15px 0;
-    padding: 5px;
-  }
-  
-  .hour-forecast img {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .col-2 {
-    padding: 0 10px;
-  }
-  
-  h6 {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .forecast-unit {
-    font-size: 11px;
-    position: relative;
-    bottom: 2.5px;
-  }
-  
-  .author a {
-    color: #636363;
-    text-decoration: underline;
-  }
-  
-  .author a:hover {
-    color: #000000;
-  }
-  
+  font-family: "Titillium Web", sans-serif;
+  color: #4a4a4a;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.fas {
+  color: #000; /* İkonları siyah yapar */
+}
+
+.search-box,
+.form-btn,
+.celsius-btn,
+.fahrenheit-btn {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000; /* İkonların içindeki metinleri siyah yapar */
+}
+
+.search-box {
+  width: 70%;
+}
+
+.form-btn {
+  background: #4a4a4a;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.form-btn i {
+  color: #fff; /* Search ve location ikonlarını beyaz yapar */
+}
+
+.form-btn:hover {
+  background: #3a3a3a;
+}
+
+.celsius-btn,
+.fahrenheit-btn {
+  background: none;
+  cursor: pointer;
+  color: #000; /* ºC ve ºF butonlarının metnini siyah yapar */
+}
+
+.active-unit .celsius-btn,
+.active-unit .fahrenheit-btn {
+  background: #4a4a4a;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.date-description {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.current-temp {
+  font-size: 3em;
+}
+
+.weather-unit {
+  font-size: 1em;
+}
+
+.weather-extra {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.hour-forecast {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hour-forecast img {
+  width: 50px;
+  height: 50px;
+}
+
+.col-2 {
+  padding: 5px;
+}
+
+h6 {
+  margin: 5px 0;
+}
+
+.github-link {
+  margin-top: 20px;
+}
+.github-link i{
+  margin-right: 10px;
+}
+.github-link .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
